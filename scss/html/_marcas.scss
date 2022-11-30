@@ -1,0 +1,12 @@
+.subtitulo1{
+    @extend %estilos-subtitulos;
+}
+.container{
+    @include container (100vw, 800px, 320px);
+}
+.img2{
+    @include margin (auto);
+    @include medidas-ancho (90%);
+    @include bordes-radio (25px);
+    text-align: center;
+}

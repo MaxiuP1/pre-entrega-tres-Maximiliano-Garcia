@@ -1,0 +1,83 @@
+//PARTIALS
+@import "./utilidades/variables.scss";
+@import "./utilidades/mixin.scss";
+@import "./html/index.scss";
+@import "./html/productos.scss";
+@import "./html/nosotros.scss";
+@import "./html/marcas.scss";
+@import "./html/contactanos.scss";
+@import "./utilidades/extend.scss";
+
+
+
+//reset
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+//body
+body{
+    background-color: $color-fondo;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+//header
+header{
+    @extend %estilos-header-dos;
+    div{
+        @extend %estilos-header;
+        img{
+            @extend %estilos-header;
+        }     
+    }
+    nav{
+        @extend %estilos-header-nav;
+        button{
+            @extend %header-nav-boton;
+            &:hover{
+                @extend %header-nav-hover;
+            }
+        }
+    }
+    div{
+        ul{
+            li{
+                @extend %header-ul-li;
+                a{
+                    @extend %ul-li-a;
+                    &:active{
+                        @extend %ul-li-a-active;
+                    }
+                    &:hover{
+                        @extend %header-nav-ul-li-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Footer
+footer{
+    nav{
+        h2{
+            @extend %estilos-subtitulos;
+        }
+        a{
+            @extend %estilos-header;
+            img{
+                @extend %estilos-header;
+            }    
+        }
+        div{
+            img{
+                @extend %estilos-img-footer;
+            }
+        }
+    }
+}

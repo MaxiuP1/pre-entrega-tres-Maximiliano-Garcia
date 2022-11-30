@@ -1,0 +1,11 @@
+.subtitulo1{
+    @extend %estilos-subtitulos;
+}
+.texto{
+    @include margin-padding (30px 30px, 10px);
+    @include bordes-radio (20px);
+    @include font-size (28px);
+    color: $color-texto-dos;
+    background-color: $color-texto;
+    text-align: center;
+}

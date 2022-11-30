@@ -1,0 +1,61 @@
+@mixin medidas-ancho ($ancho){
+    width: $ancho;
+}
+@mixin medidas-ancho-alto ($ancho-uno, $alto) {
+    width: $ancho-uno;
+    height: $alto;
+}
+@mixin margin-padding ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+@mixin margin ($margin-dos){
+    margin: $margin-dos;
+}
+@mixin padding ($padding-dos){
+    padding: $padding-dos;
+}
+@mixin margin-top ($margin-top) {
+    margin-top: $margin-top;
+}
+@mixin bordes-radio ($border-radius) {
+    border-radius: $border-radius;
+}
+@mixin bordes ($border) {
+    border: $border solid $color-primario;
+}
+@mixin bordes-dos ($border-dos) {
+    border: $border-dos solid $color-secundario;
+}
+@mixin box-shadow ($box-shadow) {
+    box-shadow: $box-shadow $color-texto-dos;
+}
+@mixin font-size ($font-size) {
+    font-size: $font-size;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-dos {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+@mixin color-bkc-text {
+    color: $color-texto-dos;
+    background-color: $color-texto;
+    text-align: center;
+}
+@mixin container ($ancho-tres, $ancho-max, $ancho-min) {
+    width: $ancho-tres;
+    max-width: $ancho-max;
+    min-width: $ancho-min;
+}
+@mixin imagenes ($grid-t-col, $grid-t-r, $gap) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
